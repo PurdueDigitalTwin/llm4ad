@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>LaMPilot|Purdue Digital Twin Lab</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">LLM4AD</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Overview</a></li>
+				<li><a href="talk2drive.html">Talk2Drive</a></li>
+				<!-- <li><a href="generic.html">Demos</a></li> -->
+				<li><a href="3R.html">3R</a></li>
+				<li><a href="survey.html">Survey</a></li>
+				<li class="active"><a href="lampilot.html">Lampilot</a></li>
+			</ul>
+
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<center>
+					<h2>LaMPilot: An Open Benchmark Dataset for Autonomous Driving with Language Model Programs<br />
+					</h2>
+				</center>
+				<center>
+					<h4>Yunsheng Ma, Can Cui, Xu Cao, Wenqian Ye, Peiran Liu, Juanwu Lu, Amr Abdelraouf, Rohit Gupta,
+						Kyungtae Han, Aniket Bera, James M. Rehg and Ziran Wang<br /></h4>
+				</center>
+				<ul class="actions special">
+					<li><a href="https://arxiv.org/abs/2312.04372" class="button large">Paper</a></li>
+				</ul>
+				<p>A novel framework for planning in the field of autonomous driving, rethinking the task as a
+					code-generation process that leverages established behavioral primitives.<br /></p>
+				</header>
+				<header>
+					<p>Main Contributions:<br />
+						1. We introduce the first benchmark for evaluating LLM-based agents in autonomous driving
+						contexts. <br />
+						2. We propose a framework including an open simulator for executing policies, equipped with
+						scoring mechanisms.<br />
+						3. Our LaMPilot provides LLM agents with a set of APIs that cover essential driving functions,
+						where safety criteria are
+						loaded into the APIs. <br />
+						4. Our LaMPilot enables the translation of natural language instructions into actionable
+						strategies through code generation.<br />
+
+						<!-- <a href="#" class="image main"><img src="images/t2d.png" alt="" /></a> -->
+
+
+						<hr />
+
+					<h2>LaMPilot Framework Architecture</h2>
+					LaMPliot framework architecture. This diagram shows the workflows of the LaMPliot framework,
+					illustrating the process
+					from initialization to evaluation. Once initialized, a structured language generator interprets the
+					simulator
+					environment to establish the language context. The central LLM handles input prompts, utilizing
+					predefined APIs and
+					generating LMP. The LMP is then executed in the simulator. The executed policy is assessed by the
+					evaluator, which
+					provides a final score for the policy.
+					<div class="image main"><img src="images/lampilot.png" alt="" /></div>
+					<hr />
+					<header>
+						<h2>Autonomous driving function modules and message flow</h2>
+						<!-- <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p> -->
+					</header>
+					<p> <span class="image left"><img src="images/freq.png" alt="" /></span>TThe dataset is divided into
+						three sets: training
+						(3,900 samples), validation (500 samples), and testing (500 samples). The dataset contains a
+						variety of instructions that reflect
+						the diversity and unpredictability of real-world requirements. These instructions are
+						categorized by maneuver types, such as turning,
+						lane changing, and overtaking, as well as scenario types, including both highway and
+						intersection settings. The right figure shows a
+						distribution of the first four words in the instructions, highlighting the diversity of
+						instructions in our dataset.
+					</p>
+					<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
+					<hr />
+				</header>
+				<h2>Evaluation of Baselines on LaMPilot</h2>
+
+				<div class="image main"><img src="images/table_lampbase.png" alt="" /></div>
+
+		</div>
+
+	</div>
+
+	<!-- Copyright -->
+	<div id="copyright">
+		<ul>
+			<li>&copy; Purdue DIgital Twin Lab</li>
+			<li>Lab Website: <a href="https://purduedigitaltwin.github.io">https://purduedigitaltwin.github.io</a></li>
+			<li>Email: <a href="cancui@purdue.edu">cancui@purdue.edu</a></li>
+		</ul>
+	</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

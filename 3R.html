@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>3R|Purdue Digital Twin Lab</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">LLM4AD</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Overview</a></li>
+				<li><a href="talk2drive.html">Talk2Drive</a></li>
+				<!-- <li><a href="generic.html">Demos</a></li> -->
+				<li class="active"><a href="3R.html">3R</a></li>
+				<li><a href="survey.html">Survey</a></li>
+				<li><a href="lampilot.html">Lampilot</a></li>
+			</ul>
+
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<center>
+					<h2>Receive, Reason, and React: Drive as You Say with Large Language Models in Autonomous
+						Vehicles<br /></h2>
+				</center>
+
+				<center>
+					<h4>Can Cui, Yunsheng Ma, Xu Cao, Wenqian Ye and Ziran Wang<br /></h4>
+				</center>
+				<ul class="actions special">
+					<li><a href="https://arxiv.org/abs/2310.08034" class="button large">Paper</a></li>
+				</ul>
+				<!-- <header class="major">
+									<h1>3R</h1>
+									<h2>Receive, Reason, and React: Drive as You Say with Large Language Models in Autonomous Vehicles<br /></h2>
+								</header>
+								<p>Talk2Drive Framework is the first a successful end-to-end implementation of an LLM-based autonomous driving system 
+									in a real-world vehicle. This approach is designed to overcome several key challenges faced by traditional autonomous driving systems.<br /></p>
+								</header> -->
+				<header>
+					<p>We present a novel approach where LLMs serve as the decision-making ``brain" within autonomous
+						vehicles.
+						Complementing this, various tools within the autonomous vehicle ecosystem, including the
+						perception module,
+						localization module, and in-cabin monitor, function as the vehicle's sensory ``eyes." This
+						configuration enables
+						LLMs to overcome the inherent limitation of not directly accessing real-time environmental
+						information. Additionally,
+						the vehicle's controller function as its ``hands," executing instructions derived from the LLM's
+						decision-making
+						process. Through receiving environmental information and drivers' commands, reasoning based on
+						this information
+						and human interaction, and finally making decisions, we make the autonomous driving experience
+						that is not just
+						technologically superior but also deeply human-centric by LLMs.
+
+						<a href="#" class="image main"><img src="images/framework_update.png" alt="" /></a>
+						<!-- <ul class="actions special">
+									<li><a href="https://arxiv.org/abs/2310.08034" class="button large">Paper</a></li>
+								</ul> -->
+
+						<hr />
+
+					<h2>3R Cases Study</h2>
+					In our closed-loop driving experiment on HighwayEnv using GPT-4, we try to assess the LLMs'
+					interpretation,
+					chain-of-thought, and environmental interaction abilities. Our experimental design includes two
+					distinct highway
+					scenarios. In the first one, the environment was safe for overtaking the vehicle ahead; in contrast,
+					the second
+					scenario presented conditions where overtaking was considered unsafe and not suitable. The emphasis
+					was on
+					observing the LLMs' reactions and decision-making in various conditions. For each scenario, we
+					employ two
+					distinct training methods. One method utilized standard prompting for training, and the other used
+					the
+					chain-of-thought prompting approach. Through this design, our objective was to discern and highlight
+					the
+					comparative advantages of using chain-of-thought prompting over standard prompting techniques. The
+					whole
+					working process for safe and unsafe scenarios is shown in below figure respectively.
+					When prompted using the chain-of-thoughts method, the LLMs first generate comprehensive and reasoned
+					thoughts before suggesting a driving plan. In contrast, with the standard prompting training method,
+					the LLMs directly present the plan. The plans derived from these two methods have distinct
+					differences.
+					<div class="image main"><img src="images/highway.png" alt="" /></div>
+					<hr />
+					<!--  -->
+					<section class="post">
+						<h2>Highway Demos</h2>
+						<header class="major">
+							<!-- <span class="date">April 25, 2017</span> -->
+						</header>
+						<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
+						<div class="container">
+							<div class="row gtr-200">
+								<div class="col-9 col-12-medium">
+									<h3>Highway Safe Passing Scenario Through Standard Prompting</h3>
+									<iframe width="900" height="500" src="https://www.youtube.com/embed/rqM0GmrDDVU"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										allowfullscreen></iframe>
+								</div>
+					</section>
+					<section class="post">
+						<header class="major">
+
+						</header>
+						<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
+						<div class="container">
+							<div class="row gtr-200">
+								<div class="col-9 col-12-medium">
+									<h3>Highway Safe Passing Scenario Through Chain-of-thought Prompting</h3>
+									<iframe width="900" height="500" src="https://www.youtube.com/embed/zgWO1wUhwFM"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										allowfullscreen></iframe>
+								</div>
+					</section>
+
+					<section class="post">
+						<header class="major">
+							<!-- <span class="date">April 25, 2017</span> -->
+						</header>
+						<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
+						<div class="container">
+							<div class="row gtr-200">
+								<div class="col-9 col-12-medium">
+									<h3>Highway Unsafe Passing Scenario Through Standard Prompting</h3>
+									<iframe width="900" height="500" src="https://www.youtube.com/embed/2r0s7U6312c"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										allowfullscreen></iframe>
+								</div>
+					</section>
+					<section class="post">
+						<header class="major">
+
+						</header>
+						<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
+						<div class="container">
+							<div class="row gtr-200">
+								<div class="col-9 col-12-medium">
+									<h3>Highway Unsafe Passing Scenario Through Chain-of-thought Prompting</h3>
+									<iframe width="900" height="500" src="https://www.youtube.com/embed/fZrgs8VSDyo"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										allowfullscreen></iframe>
+								</div>
+					</section>
+
+			</section>
+			<section class="post">
+				<h2>Intersection Demos</h2>
+				<header class="major">
+					<!-- <span class="date">April 25, 2017</span> -->
+				</header>
+				<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
+				<div class="container">
+					<div class="row gtr-200">
+						<div class="col-9 col-12-medium">
+							<h3>Merging Scenario with No Extra Command</h3>
+							<iframe width="900" height="500" src="https://www.youtube.com/embed/IDoLYGzx4wQ"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+						</div>
+
+						<section class="post">
+							<header class="major">
+
+							</header>
+							<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
+							<div class="container">
+								<div class="row gtr-200">
+									<div class="col-9 col-12-medium">
+										<h3>Merging Scenario with Command "Drive Aggressively"</h3>
+										<iframe width="900" height="500" src="https://www.youtube.com/embed/1V88DCHyASE"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											allowfullscreen></iframe>
+									</div>
+
+
+									<section class="post">
+										<header class="major">
+											<!-- <span class="date">April 25, 2017</span> -->
+										</header>
+										<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
+										<div class="container">
+
+											<div class="row gtr-200">
+												<div class="col-9 col-12-medium">
+													<h3>Merging Scenario with the Command "Drive Conservatively"</h3>
+													<iframe width="900" height="500"
+														src="https://www.youtube.com/embed/sbEtHRJHisU"
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+														allowfullscreen></iframe>
+												</div>
+									</section>
+						</section>
+					</div>
+				</div>
+
+
+		</div>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Purdue DIgital Twin Lab</li>
+				<li>Lab Website: <a href="https://purduedigitaltwin.github.io">https://purduedigitaltwin.github.io</a>
+				</li>
+				<li>Email: <a href="cancui@purdue.edu">cancui@purdue.edu</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
