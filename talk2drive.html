@@ -47,7 +47,7 @@
             <!-- Post -->
             <section class="post">
                 <center>
-                    <h2>Large Language Models for Autonomous Driving: Real-World Experiments<br /></h2>
+                    <h2>Personalized Autonomous Driving with Large Language Models: Field Experiments<br /></h2>
                 </center>
 
 
@@ -77,16 +77,18 @@
 
 
                         <hr />
-                    <p><span class="image right"><img src="images/main_update.png" alt="" /></span>Talk2Drive framework
+                    <p><span class="image right"><img src="images/main.png" alt="" /></span>Talk2Drive framework
                         architecture.
-                        A human's spoken instructions are processed by cloud-based LLMs,
+                        A human's spoken instructions I are processed by cloud-based LLMs,
                         which synthesize contextual data C from weather, traffic conditions, and local traffic rules
-                        information.
-                        The LLMs generate executable codes P that are communicated to the vehicle's Electronic Control
+                        information, the predefined system messages S and the history interaction H.
+                        The LLMs generate executable language model programs (LMPs) P that are communicated to the
+                        vehicle's Electronic Control
                         Unit (ECU).
-                        These codes operate the actuation of vehicle controls, ensuring that the human's intent is
+                        These LMPs operate the actuation of vehicle controls, ensuring that the human's intent is
                         translated into safe
-                        and personalized driving actions. A memory module archives every command I, its resultant codes
+                        and personalized driving actions. A memory module archives every command I, its resultant
+                        programs
                         P, and
                         subsequent user feedback F, ensuring continuous refinement of the personalized driving
                         experience.
